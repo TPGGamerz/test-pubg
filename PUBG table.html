@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scorelist.js"></script>
+    <style>
+        .hed {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width: 100%;
+            color: #f0c013;
+            background-color: black;
+            font-size: 30px;
+        }
+
+        body {
+            /* The image used */
+            background-color: black;
+            background-position: center;
+            /* Full height */
+            /* Center and scale the image nicely */
+            background-repeat: no-repeat;
+        }
+
+        .ovmh {
+            background-color: #17078c;
+            color: aliceblue;
+            font-weight: bold;
+            width: 100px;
+            display: inline-block;
+            float: left;
+            height: 22px;
+        }
+
+        .mh {
+            background-color: #17078c;
+            color: aliceblue;
+            font-weight: bold;
+            width: 250px;
+            display: inline-block;
+            float: left;
+            height: 22px;
+        }
+
+        .reh {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-top: 22px solid #17078c;
+            border-right: 20px solid transparent;
+        }
+
+        .leh {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-bottom: 22px solid #17078c;
+            border-left: 20px solid transparent;
+        }
+
+        .kmh {
+            background-color: #17078c;
+            font-weight: bold;
+            width: 20px;
+            color: aliceblue;
+            display: inline-block;
+            float: left;
+            height: 22px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .kreh {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-top: 22px solid #17078c;
+            border-right: 20px solid transparent;
+        }
+
+        .kleh {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-bottom: 22px solid #17078c;
+            border-left: 20px solid transparent;
+        }
+
+        .m {
+            background-color: #dfdfeb;
+            width: 250px;
+            display: inline-block;
+            float: left;
+            height: 22px;
+        }
+
+
+
+        .ovm {
+            background-color: #dfdfeb;
+            width: 70px;
+            display: inline-block;
+            float: left;
+            height: 22px;
+        }
+
+        .test {
+            background-color: aqua;
+            border-left-color: aqua;
+        }
+
+        .re {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-top: 22px solid #dfdfeb;
+            border-right: 20px solid transparent;
+        }
+
+        .le {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-bottom: 22px solid #dfdfeb;
+            border-left: 20px solid transparent;
+        }
+
+        .km {
+            background-color: rgba(252,148,20,.8);
+            width: 20px;
+            color: aliceblue;
+            display: inline-block;
+            float: left;
+            height: 22px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .kre {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-top: 22px solid rgba(252,148,20,.8);
+            border-right: 20px solid transparent;
+        }
+
+        .kle {
+            content: '';
+            display: inline-block;
+            float: left;
+            background: transparent;
+            top: 0;
+            right: 0;
+            border-bottom: 22px solid rgba(252,148,20,.8);
+            border-left: 20px solid transparent;
+        }
+
+        th {
+            color: aliceblue;
+        }
+
+        tr:hover {
+            background-color: #ff0000;
+        }
+
+        .ttable {
+            width: 1500px;
+            border-spacing: 5px 10px;
+        }
+
+        caption {
+            font-family: 'Trocchi', serif;
+            font-size: 70px;
+            font-weight: normal;
+            line-height: 48px;
+            font-style: oblique;
+            margin: 0;
+            color: #D0F8FF;
+            text-shadow: 2px 2px 2px #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+
+
+    <table class="ttable">
+        <caption>RAGE GAMER'Z TOURNAMENT</caption>
+        <tr>
+            <th></th>
+            <th></th>
+            <th colspan="2" class="tath">DAY1</th>
+            <th colspan="2" class="tath">DAY2</th>
+            <th colspan="2" class="tath">DAY3</th>
+            <th colspan="2" class="tath">DAY4</th>
+            <th colspan="2" class="tath">DAY5</th>
+            <th colspan="2" class="tath">DAY6</th>
+            <th colspan="2" class="tath">DAY7</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>#</th>
+            <td><div class="leh"></div><div class="mh">TEAM NAME</div><div class="reh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="kleh"></div><div class="kmh">KP</div></td>
+            <td><div class="kmh">PP</div><div class="kreh"></div></td>
+
+            <td><div class="leh"></div><div class="ovmh">Totel Score</div><div class="reh"></div></td>
+        </tr>
+
+        <script>
+            for (var i = 0; i < arr.length; i++) {
+                document.write("<tr>");
+                document.write("<th>" + (i + 1) + "</th>");
+                document.write("<td><div class=\"le\"></div><div class=\"m\">" + arr[i].tname + "</div><div class=\"re\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp1 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp1 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp2 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp2 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp3 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp3 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp4 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp4 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp5 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp5 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp5 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp5 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"kle\"></div><div class=\"km\">" + arr[i].kp5 + "</div></td>");
+                document.write("<td><div class=\"km\">" + arr[i].pp5 + "</div><div class=\"kre\"></div></td>");
+
+                document.write("<td><div class=\"le\"></div><div class=\"ovm\">" + arr[i].overall + "</div><div class=\"re\"></div></td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>
